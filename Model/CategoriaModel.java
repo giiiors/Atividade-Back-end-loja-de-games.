@@ -1,5 +1,5 @@
 package com.generation.lojaDeGames.Model;
 
-public class LojadegamesModel {
+public class CategoriaModel {
 
 }
