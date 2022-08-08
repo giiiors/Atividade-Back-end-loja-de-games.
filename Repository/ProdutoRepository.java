@@ -11,7 +11,7 @@ import com.generation.lojaDeGames.Model.ProdutoModel;
 
 @Repository
 public interface ProdutoRepository extends JpaRepository<ProdutoModel, Long>{
-public List <ProdutoModel> findProdutoBetween (@Param("inicio") BigDecimal inicio, @Param ("fim") BigDecimal fim);
+public List <ProdutoModel> findAllPrecoBetween (@Param("inicio") BigDecimal inicio, @Param ("fim") BigDecimal fim);
 	
 
 }
