@@ -10,6 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -22,6 +23,7 @@ public class CategoriaModel {
 private Long id;
 
 @NotBlank(message = "Categoria é obrigatório")
+@Size(min =3, max = 12)
 private String nomeCategoria;
 
 @OneToMany(mappedBy="categoria", cascade = CascadeType.ALL )
