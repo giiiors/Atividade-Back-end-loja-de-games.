@@ -33,6 +33,10 @@ public class ProdutoModel {
 	@JsonIgnoreProperties("produto")
 	private CategoriaModel categoria;
 	
+	@ManyToOne
+	@JsonIgnoreProperties("produto")
+	private UsuarioModel usuario;
+	
 		public Long getId() {
 		return id;
 	}
@@ -65,4 +69,21 @@ public class ProdutoModel {
 		this.categoria = categoria;
 	}
 
+	public BigDecimal getPreco() {
+		return preco;
+	}
+
+	public void setPreco(BigDecimal preco) {
+		this.preco = preco;
+	}
+
+	public UsuarioModel getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(UsuarioModel usuario) {
+		this.usuario = usuario;
+	}
+
+	
 	}
